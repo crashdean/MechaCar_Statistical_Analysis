@@ -1,16 +1,16 @@
-Deliverable 1 Instructions
+## Deliverable 1 Instructions
 
-# 1.  Use the library() function to load the dplyr package.
+### 1.  Use the library() function to load the dplyr package.
 > library(dplyr)
 Attaching package: ‘dplyr’
 The following objects are masked from ‘package:stats’: filter, lag
 The following objects are masked from ‘package:base’: intersect, setdiff, setequal, union
 
-# 2.  Import and read in the MechaCar_mpg.csv file as a dataframe.
+### 2.  Import and read in the MechaCar_mpg.csv file as a dataframe.
 > MechaCar <- read.csv(file='MechaCar_mpg.csv', check.names=F, stringsAsFactors=F)
 > View(MechaCar)
 
-# 3.  Perform linear regression using the lm() function.
+### 3.  Perform linear regression using the lm() function.
 > lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=MechaCar)
 Call:
 lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
@@ -20,7 +20,7 @@ Coefficients:
      (Intercept)    vehicle_length    vehicle_weight     spoiler_angle  ground_clearance               AWD  
       -1.040e+02         6.267e+00         1.245e-03         6.877e-02         3.546e+00        -3.411e+00  
 
-# 4.  Using the summary() function, determine the p-value and the r-squared value for the linear regression model.
+### 4.  Using the summary() function, determine the p-value and the r-squared value for the linear regression model.
 > summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=MechaCar))
 
 Call:
@@ -45,3 +45,20 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 8.774 on 44 degrees of freedom
 Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
 F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
+
+## Deliverable 2 Requirements
+
+### 1. Download the Suspension_Coil.csv file
+Suspension <- read.csv(file='Suspension_Coil.csv', check.names=F, stringsAsFactors=F)
+
+## 2. In your MechaCarChallenge.RScript, import and read in the Suspension_Coil.csv file as a table.
+> View(Suspension)
+
+### 3. Write an RScript that creates a total_summary dataframe
+> total_summary <- Suspension %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), StDev=sd(PSI))
+> View(total_summary)
+
+### 4. Write an RScript that creates a lot_summary dataframe
+> lot_summary <- Suspension %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),StDev=sd(PSI))
+> View(total_summary)
+
