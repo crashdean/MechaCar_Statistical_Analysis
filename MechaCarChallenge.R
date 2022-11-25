@@ -46,7 +46,7 @@ Residual standard error: 8.774 on 44 degrees of freedom
 Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
 F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 
-# Deliverable 2 Requirements
+# Deliverable 2 Instructions
 
 # 1. Download the Suspension_Coil.csv file
 Suspension <- read.csv(file='Suspension_Coil.csv', check.names=F, stringsAsFactors=F)
@@ -61,4 +61,60 @@ Suspension <- read.csv(file='Suspension_Coil.csv', check.names=F, stringsAsFacto
 # 4. Write an RScript that creates a lot_summary dataframe
 > lot_summary <- Suspension %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),StDev=sd(PSI))
 > View(total_summary)
+
+# Deliverable 3 Instructions
+
+# 1. In your MechaCarChallenge.RScript, write an RScript using the t.test() function
+ t.test(Suspension$PSI, mu=1500)
+
+	One Sample t-test
+
+data:  Suspension$PSI
+t = -1.8931, df = 149, p-value = 0.06028
+alternative hypothesis: true mean is not equal to 1500
+95 percent confidence interval:
+ 1497.507 1500.053
+sample estimates:
+mean of x 
+  1498.78 
+
+# 2. In your MechaCarChallenge.RScript, write individual Lot  RScript using the t.test() function
+> t.test(subset(Suspension, Manufacturing_Lot=="Lot1")$PSI, mu=1500)
+
+	One Sample t-test
+
+data:  subset(Suspension, Manufacturing_Lot == "Lot1")$PSI
+t = 0, df = 49, p-value = 1
+alternative hypothesis: true mean is not equal to 1500
+95 percent confidence interval:
+ 1499.719 1500.281
+sample estimates:
+mean of x 
+     1500 
+
+> t.test(subset(Suspension, Manufacturing_Lot=="Lot2")$PSI, mu=1500)
+
+	One Sample t-test
+
+data:  subset(Suspension, Manufacturing_Lot == "Lot2")$PSI
+t = 0.51745, df = 49, p-value = 0.6072
+alternative hypothesis: true mean is not equal to 1500
+95 percent confidence interval:
+ 1499.423 1500.977
+sample estimates:
+mean of x 
+   1500.2 
+
+> t.test(subset(Suspension, Manufacturing_Lot=="Lot3")$PSI, mu=1500)
+
+	One Sample t-test
+
+data:  subset(Suspension, Manufacturing_Lot == "Lot3")$PSI
+t = -2.0916, df = 49, p-value = 0.04168
+alternative hypothesis: true mean is not equal to 1500
+95 percent confidence interval:
+ 1492.431 1499.849
+sample estimates:
+mean of x 
+  1496.14 
 
