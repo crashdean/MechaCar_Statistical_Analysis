@@ -16,6 +16,10 @@ The model does predict mpg do the the r^2 value of .7149.
 
 ## Summary Statistics on Suspension Coils
 
+![](Resources/suspension_total_summary.png)
+
+![](Resources/suspension_total_summary.png)
+
 
 
 
