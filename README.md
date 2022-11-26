@@ -18,8 +18,18 @@ The model does predict mpg do the the r^2 value of .7149.
 
 ![](Resources/suspension_total_summary.png)
 
-![](Resources/suspension_total_summary.png)
+![](Resources/lot_summary.png)
 
+The total summary shows the variance of 62 PSI which is under the total maximum variance of 100 PSI.
+
+If we look at the individual lot sumary, we can see that lot 3 was over the total variance maximum at 170 PSI.   This would make lot 3 not allowed
+in the design specification for the colil suspension.   It is important to calculate the individual variance in order to properly qualify the design
+specification since the lots calculated in tandem did pass.
+
+
+## T-Tests on Suspension Coils
+
+![](Resources/suspension_total_summary.png)
 
 
 
