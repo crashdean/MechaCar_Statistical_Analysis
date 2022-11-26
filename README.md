@@ -3,5 +3,5 @@
 
 ## Linear Regression to Predict MPG
 
-[](Resources/mpg_linear_regression.png)
+![](Resources/mpg_linear_regression.png)
 
