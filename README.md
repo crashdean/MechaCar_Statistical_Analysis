@@ -31,5 +31,11 @@ specification since the lots calculated in tandem did pass.
 
 ![](Resources/t_tests_suspension_coils.png)
 
+Looking at the first t-test, the sample mean in not statistically different from the population mean of 1500 PSI which has a p-value of .06.
+
+Looking at the individual t-tests, we can see that lot 1 and 2 are not statistically different from the population mean with p-values of 1 and .6.  
+Lot 3 is statistically different from the population mean with a p-value of .04.
+
+
 
 
