@@ -37,5 +37,16 @@ Looking at the individual t-tests, we can see that lot 1 and 2 are not statistic
 Lot 3 is statistically different from the population mean with a p-value of .04.
 
 
+## Study Design: MechaCar vs Competition
+
+
+There are a few metrics to consider when comparing the MechaCar against the competion.   These metrics would include cost of vehicle, city and highway mpg,
+horse poewer, and over all safety rating.   We would need to compare these metrics to the competision to determine statistical significants.   The null hypothesis
+would be that metrics do not vary significantly from the competition and the alternative hypothesis would be that they do vary signifficantly from the competition.
+A one-tailed t-test would be used with these metrics.   Different results would be ideal such as horse power and fuel efficient to be significantly different.
+This would be in the directin of more fuel efficientcy and higher horse powere then the competition.  We would want the saftey rating to be greater than the competitors also.   We would need the gather these metrics form the competitionas well as using our own to create the stistically significance.
+
+
+
 
 
