@@ -12,3 +12,10 @@ The slope of the linear model would not be zero.   The non-zero slope coefficien
 the p-values which are lees than the significante level of p=.05 as seen from the chart above.
 
 The model does predict mpg do the the r^2 value of .7149.
+
+
+## Summary Statistics on Suspension Coils
+
+
+
+
