@@ -29,7 +29,7 @@ specification since the lots calculated in tandem did pass.
 
 ## T-Tests on Suspension Coils
 
-![](Resources/suspension_total_summary.png)
+![](Resources/t_tests_suspension_coils.png)
 
 
 
